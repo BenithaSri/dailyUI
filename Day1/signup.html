@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signUp.css">
+    <title>RFC</title>
+</head>
+
+<body>
+    <h1>Volunteers for Run for a Cause</h1>
+    <h3>Fields indicated with <span style="color: red;">*</span> are mandatory!</h3>
+    <form class="signup-form">
+        <label for="firstname"><span style="color: red;">*</span>Full name:</label>
+        <input type="text" id="firstname" name="firstname" required>
+
+        <label for="email"><span style="color: red;">*</span>Email : </label>
+        <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+
+        <label for="age"><span style="color: red;">*</span>Age: </label>
+        <input type="number" id="age" name="age" required>
+
+        <label for="contact"><span style="color: red;">*</span>Contact Number: </label>
+        <input type="text" id="contact" name="contact" placeholder="000-000(0000)" required>
+
+        <label for="availability">What time are you free?</label>
+        <div class="availability">
+
+            <label for="availability-morning">
+                <input type="radio" id="availability-morning" name="availability" value="morning">Any time
+            </label>
+
+
+            <label for="availability-afternoon"><input type="radio" id="availability-afternoon" name="availability"
+                    value="afternoon">9 - 12</label>
+
+
+            <label for="availability-evening"><input type="radio" id="availability-evening" name="availability"
+                    value="evening">2 - 5</label>
+
+
+            <label for="availability-night"><input type="radio" id="availability-night" name="availability"
+                    value="night">6 - 9</label>
+
+
+            <label for="availability-all"><input type="radio" id="availability-all" name="availability" value="all">All
+                night</label>
+        </div>
+
+        <label for="interest">What are you interested in?
+            <span style="color: gainsboro;"> [Fundraising, Event, Volunteer, Wherever you need me! ]</span>
+        </label>
+        <input type="text" id="interest" name="interest">
+
+
+
+
+        <label for="experience">Do you have any experience?</label>
+        <input type="checkbox" id="experience-yes" name="experience" value="yes">Yes
+        <input type="checkbox" id="experience-no" name="experience" value="no">No
+
+        <label for="comments">Any comments?</label>
+        <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+
+</html>
