@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Checkout</title>
+    <link rel="stylesheet" href="checkout.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="form-container">
+        <form>
+          <h1>Checkout 💳 </h1>
+          <label for="name"
+            ><span style="color: red">*</span>Name on card :
+          </label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="cardNumber"
+            ><span style="color: red">*</span>Card Number :
+          </label>
+          <input type="text" id="cardNumber" name="cardNumber" required />
+
+          <label for="expiryDate"
+            ><span style="color: red">*</span>Expiry Date :
+          </label>
+          <input type="month" id="expiryDate" name="expiryDate" required />
+
+          <label for="cvv"><span style="color: red">*</span>CVV : </label>
+          <input type="text" id="cvv" name="cvv" required />
+
+          <button type="submit">Proceed to Checkout</button>
+        </form>
+      </div>
+
+      <div class="cart">
+        <h1>Cart 🛒</h1>
+        <div class="cart-container">
+          <div class="cart-item">
+            <h2>Product 1</h2>
+            <p>Price: $19.99</p>
+            <p>Quantity: 1</p>
+            <div class="product-rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <div class="quantity-buttons">
+              <button class="quantity-reduce">-</button>
+              <span id="counter">1</span>
+              <button class="quantity-add" onclick="add()">+</button>
+              <button class="remove-button">Remove</button>
+            </div>
+            <div class="product-image">
+              <img
+                src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FydHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"
+                alt="Product Image" />
+            </div>
+          </div>
+          <div class="cart-item">
+            <h2>Product 2</h2>
+            <p>Price: $29.99</p>
+            <p>Quantity: 2</p>
+            <div class="product-rating">
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+              <span class="star">&#9733;</span>
+            </div>
+            <div class="quantity-buttons">
+              <button class="quantity-reduce" onclick="reduce()">-</button>
+              <span id="counter">1</span>
+              <button class="quantity-add" onclick="add()">+</button>
+              <button class="remove-button">Remove</button>
+            </div>
+            <div class="product-image">
+              <img
+                src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FydHxlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80"
+                alt="Product Image" />
+            </div>
+          </div>
+
+          <div class="price-details">
+            <h2>Price Details</h2>
+            <p>Subtotal: $49.98</p>
+            <p>Shipping: $5.00</p>
+            <p>Total: $54.98</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    function add(event) {
+      let counterSpan = event.target.previousElementSibling; // Get the span before the clicked button
+      let count = parseInt(counterSpan.innerText); // Convert to number
+      count++;
+      counterSpan.innerText = count; // Update the quantity
+    }
+  
+    function reduce(event) {
+      let counterSpan = event.target.nextElementSibling; // Get the span after the clicked button
+      let count = parseInt(counterSpan.innerText);
+      if (count > 1) { // Prevents reducing below 1
+        count--;
+        counterSpan.innerText = count;
+      }
+    }
+  
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll(".quantity-add").forEach((button) => {
+        button.addEventListener("click", add);
+      });
+  
+      document.querySelectorAll(".quantity-reduce").forEach((button) => {
+        button.addEventListener("click", reduce);
+      });
+    });
+  </script>
+  
+</html>

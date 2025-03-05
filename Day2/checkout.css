@@ -1,0 +1,107 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 5%;
+  top: 15%;
+  width: 50%;
+  height: auto;
+  background-color: #7886C7;
+  border: 2px solid #7886C7;
+  box-shadow: #eaeaea 2px 2px 5px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.form-container form label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.form-container form input {
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-container form button{
+  padding: 10px;
+  width: 200px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+}
+.form-container form button:hover {
+  background-color: #3e8e41;
+}
+
+#expiryDate , #cvv{
+  width: 150px;
+}
+ #cardNumber, #name{
+  width: 500px;
+ }
+
+ .cart{
+  position: relative;
+  left:50%;
+  margin-top: 50px;
+  border: black 2px solid;
+  border-radius: 10px;
+  width: 30%;
+  height: 600px; 
+  background-color: white ;
+  overflow-y: scroll;
+  padding : 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+ .cart-container {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+ }
+
+.cart-item{
+  border: #3e8e41 2px solid;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  background-color: #f2f2f2;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+.quantity-buttons {
+  display:inline;
+  float: inline-end;
+  padding: 10px;
+  margin: 10px;
+}
+
+.product-image img {
+  float: right; 
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  width: 90px;
+  height: 90px;
+  margin-right: 10px;
+  border-radius: 30%;  
+}
+
+.price-details{
+  padding: 10px;
+}
+
+.product-rating{
+  color: gold
+}
