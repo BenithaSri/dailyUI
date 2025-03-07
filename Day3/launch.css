@@ -78,7 +78,7 @@ body {
   white-space: nowrap;
   overflow: hidden;
   display: block;
-  animation: marquee 50s linear infinite;
+  animation: marquee 40s linear infinite;
   margin: 0;
   padding: 0;
   color: #be5985;
@@ -87,13 +87,12 @@ body {
 }
 
 @keyframes marquee {
-  from {
-    transform: translateX(100%);
-  }
-
-  to {
-    transform: translateX(-100%);
-  }
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
 }
 
 /*Hero */
@@ -257,11 +256,16 @@ body {
 }
 
 /*Contact*/
+#contact{
+    display: flex;
+    flex-direction: row;
+    margin: 50px;
+}
 .contact-item {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 10px;
-  margin: 50px;
+
 }
 
 .contact-item-card {
@@ -276,8 +280,6 @@ body {
   height: 50px;
   border-radius: 10px;
 }
-
-/* Responsive Design with Media Queries */
 
 /* For mobile screens */
 @media (max-width: 768px) {

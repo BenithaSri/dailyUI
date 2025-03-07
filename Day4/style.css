@@ -1,0 +1,93 @@
+body{
+    background-color:rgba(171, 10, 10, 0.812);
+}
+
+.container{
+    background-color: #F9F9F9;
+    border:#F9F9F9 solid 1px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 350px;
+    margin-top: 150px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 500px;
+    height: auto;
+    position: relative;
+}
+
+.profile-image img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    top: -55px;
+    left: 40%;
+}
+
+.profile-info{ 
+    text-align: center;
+    margin-top: 70px;
+}
+
+.profile-info li{
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+.profile-social li{
+    list-style: none;
+    margin-bottom: 10px;
+    display: inline-block;
+    padding: 5px 10px;
+    margin-left: 100px;
+}
+
+.profile-social li i{
+    font-size: 30px;
+    color: #333;
+}
+.profile-social li i:hover{
+    transition: 0.5s;
+    transform: matrix(1.1);
+    cursor: pointer;
+}
+
+.profile-about{
+    opacity: 0;
+}
+
+.container:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+    transform: rotateY('360deg');
+}
+
+/* Add blur effect and opacity reduction on hover */
+.container:hover .profile-info,
+.container:hover .profile-social,
+.container:hover .profile-image img {
+    opacity: 0.2;
+    filter: blur(5px);
+}
+
+/* Black blurred background with the "About Me" section centered */
+.profile-about {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Make the about section visible on hover */
+.container:hover .profile-about {
+    opacity: 1;
+}
