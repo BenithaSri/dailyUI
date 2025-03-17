@@ -1,0 +1,136 @@
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 5px;
+    font-family: "Bodoni", serif;
+    background-color: #211C84;
+    box-sizing: border-box;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 10px 20px;
+}
+
+.header h1 {
+    font-size: 40px;
+    margin: 0;
+}
+
+.header img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr;
+    gap: 10px;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: column;
+    border: transparent 2px solid;
+    border-radius: 5px;
+    box-shadow: #666666 1px 1px 1px 1px;
+    max-width: 200px;
+    height: 80vh;
+    padding: 15px;
+    background-color: aliceblue;
+}
+
+.nav-container button {
+    background-color: transparent;
+    color: black;
+    border: none;
+    width: auto;
+    height: 50px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-bottom: 10px;
+}
+
+.nav-container button:hover {
+    background-color: #211C84;
+    color: aliceblue;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.nav-container button:focus {
+    background-color: #211C84;
+    color: aliceblue;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.body-container {
+    display: flex;
+    flex-direction: row;
+    border: transparent 2px solid;
+    box-shadow: #666666 1px 1px 1px 1px;
+    border-radius: 5px;
+    height: 80vh;
+    padding: 10px;
+    background-color: aliceblue;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+    
+    .nav-container {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    
+    .nav-container button {
+        width: 100%;
+    }
+    
+    .nav-container button:hover {
+        transform: scale(1.05);
+    }
+    
+    .body-container {
+        height: auto;
+        min-height: 50vh;
+    }
+    
+    .header h1 {
+        font-size: 28px;
+    }
+    
+    .header img {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .header h1 {
+        margin-bottom: 10px;
+    }
+    
+    body {
+        height: auto;
+        min-height: 100vh;
+    }
+}
