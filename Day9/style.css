@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'Liberty';
+    src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/907368/liberty.otf') format('opentype');
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.57); /* Equivalent to #00000092 */
+    color: #ffffff;
+    font-family: 'Liberty', sans-serif;
+}
+
+
+.content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+.content h1{
+    font-size: 150px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0px;
+    
+}
+
+
+.content h4{
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.content p{
+    font-size: 20px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.content a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.content a:hover{
+    text-decoration: underline;
+    border-radius: 10px;
+    padding: 10px; 
+}
+
+
+.content h1, .content h4, .content p, .content a{
+    text-shadow: 0 0 2rem #00f0ff;
+   animation: flicker 1.5s infinite alternate;
+}
+
+@keyframes flicker {
+    0% {
+        color: #d9fdffaf;
+        text-shadow: 0 0 2rem #00f0ff;
+    }
+    10% {
+        color:  #d9fdff;
+        text-shadow: 0 0 2rem #00f0ff;
+    }
+    20% {
+        color:  #d9fdffaf;
+        text-shadow: 0 0 2rem #00f0ff;
+    }
+    50% {
+        color:  #d9fdff;
+        text-shadow: 0 0 2rem #00f0ff;
+    }
+    80% {
+        color:  #d9fdff;
+        text-shadow: 0 0 2rem #00f0ff;
+    }
+    90% {
+        color:  #d9fdffaf;
+        text-shadow: 0 0 2rem #00f0ff;
+    }
+    100% {
+        color:  #d9fdffaf;
+        text-shadow: 0 0 2rem #00f0ff;
+    }
+  }
