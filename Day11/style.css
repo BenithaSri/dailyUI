@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700');
+
+body {
+    background: #C01933;
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    background-image: url('media/background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.containerheader {
+    margin-left: 300px;
+    margin-bottom: 20px; 
+    margin-top: 20px;
+}
+
+.containerheader h2 {
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    text-align:justify;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.containerheader button {
+    background: transparent;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    margin: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
+}
+
+.containerheader button:hover {
+    background-color: #000;
+    color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.containerheader button i {
+    margin-right: 5px;
+    font-size: 50px;
+}
+
+.container {
+    width: 360px;
+    height: 15px;
+    border: #fff solid 5px;
+    border-radius: 20px;
+    position: absolute;
+    top: 10%;
+    left: 40%;
+}
+
+.receipt {
+    width: 350px;
+    height: auto;
+    background: #fff;
+    border-radius: 20px;
+    position: absolute;
+    top: 12%; /* Adjusted position based on containerheader */
+    left: 41%;
+    color: black;
+    margin: 0;
+}
+
+@keyframes print {
+    0% {
+        transform: translateY(-510px);
+        opacity: 0;
+    }
+    35%{
+       transform: translateY(-395px);
+       opacity: 0.2;
+    }
+    40% {
+        transform: translateY(-280px);
+        opacity: 0.4;
+    }
+    50% {
+        transform: translateY(-140px);
+        opacity: 0.5;
+    }
+    60% {
+        transform: translateY(0px);
+        opacity: 0.6;
+    }
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.receipt img {
+    width: 100px;
+    height: 70px;
+    margin: 0;
+}
+
+.receipt-conatiner {
+    margin: 0;
+    padding: 10px;
+}
+
+.receipt-header {
+    text-align: center;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+    margin: 10px;
+}
+
+.receipt-header h2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.receipt-header img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0px;
+}
+
+.details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: start;
+    margin-left: 10px;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+.item {
+    margin-top: 10px;
+    margin-left: 25px;
+}
+
+.item span {
+    font-size: 15px;
+    color: rgb(188, 184, 184);
+}
+
+.item h3 {
+    font-family: inherit;
+    font-size: 400;
+}
+
+.receipt::after{
+    content: "";
+    width: 350px;
+    height: 1px;
+    background: #000;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.receipt-footer {
+    width: 350px;
+    height: auto;
+    background: #fff;
+    border-radius: 20px;
+    position: absolute;
+}
