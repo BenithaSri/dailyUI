@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Navbar with Dropdowns</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">Logo</div>
+        <ul class="nav-links">
+            <li class="nav-item">
+                <a href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" onclick="toggleDropdown(event, 'aboutMenu')">About <i class="fas fa-caret-down"></i></a>
+                <ul class="dropdown-content" id="aboutMenu">
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Team</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" onclick="toggleDropdown(event, 'servicesMenu')">Services <i class="fas fa-caret-down"></i></a>
+                <ul class="dropdown-content" id="servicesMenu">
+                    <li><a href="#">Web Design</a></li>
+                    <li><a href="#">Development</a></li>
+                    <li><a href="#">Marketing</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a href="#" onclick="toggleDropdown(event, 'contactMenu')">Contact <i class="fas fa-caret-down"></i></a>
+                <ul class="dropdown-content" id="contactMenu">
+                    <li><a href="#">Email Us</a></li>
+                    <li><a href="#">Location</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="content">
+        <div class="content-image">
+            <img src="images/back.jpg" alt="Background">
+        </div>
+        <div class="content-text">
+            <h1>Coming Soon!</h1>
+            <h2>Something exciting is coming soon. Stay tuned for updates.</h2>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
