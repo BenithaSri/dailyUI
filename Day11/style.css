@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700');
 
 body {
     background: #C01933;
     color: #fff;
     font-family: 'Ubuntu', sans-serif;
     background-image: url('media/background.png');
-    background-size: object-fit;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
 }
