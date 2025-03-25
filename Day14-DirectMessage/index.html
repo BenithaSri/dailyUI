@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <title>Direct Message</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <div class="nav-right">
+                 <div class="nav-item">
+                    <a href="#"><i class="fas fa-home"></i></a>
+                 </div>
+                 <div class="nav-item">
+                    <a href="#"><i class="fa-solid fa-user"></i></a>
+                 </div>
+                 <div class="nav-item">
+                    <a href="#"><i class="fa-solid fa-comments"></i></a>
+                 </div>
+                 <div class="nav-item">
+                    <a href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i></a>
+                 </div>
+            </div>
+        </nav>
+        <div class="message-list">
+            <div class="message-item">
+                <div class="message-item-avatar">
+                    <img src="https://picsum.photos/id/1/100/100" alt="">
+                    <span class="online-indicator"></span>
+                </div>
+                <div class="message-item-content">
+                    <h3>Benitha</h3>
+                    <p>Hey!</p>
+                </div>
+                <div class="message-time">
+                    <span>12:00am</span>
+                </div>    
+                <div class="unread">
+                    <span>2</span>
+                </div>            
+            </div>
+            <div class="message-item" id="read">
+                <div class="message-item-avatar">
+                    <img src="https://picsum.photos/id/10/100/100" alt="">
+                </div>
+                <div class="message-item-content">
+                    <h3>Konarek</h3>
+                    <p>9:00pm ...</p>
+                </div>
+                <div class="message-time">
+                    <span>10:00am</span>
+                </div>   
+                <div class="unread read">
+                    <span>2</span>
+                </div>
+            </div>
+            <div class="message-item">
+                <div class="message-item-avatar">
+                    <img src="https://picsum.photos/id/2/100/100" alt="">
+                    <span class="online-indicator"></span>
+                </div>
+                <div class="message-item-content">
+                    <h3>Hugh</h3>
+                    <p>When are...</p>
+                </div>
+                <div class="message-time">
+                    <span>5:00am</span>
+                </div>  
+                <div class="unread">
+                    <span>2</span>
+                </div>               
+            </div>
+
+        </div>
+        <div class="message-box">
+            <div class="message-box-header">
+                <div class="message-box-header-avatar">
+                    <img src="https://picsum.photos/id/1/100/100" alt="">
+                    <div class="message-box-header-avatar-info">
+                        <h3>Benitha</h3>
+                        <span>Online</span>
+                    </div>
+                   
+                </div>
+                <div class="message-box-header-content">
+                    <i class="fa-solid fa-ellipsis-vertical"></i>
+                </div>  
+            </div>
+            <div class="message-box-content">
+                <!-- Left Message -->
+                <div class="message-box-content-item left">
+                    <div class="message-box-content-item-avatar">
+                        <img src="https://picsum.photos/id/1/100/100" alt="">
+                    </div>
+                    <div class="message-box-content-item-content">
+                        <div class="message-box-content-item-content-message">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <span>12:00am</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Right Message -->
+                <div class="message-box-content-item right">
+                    <div class="message-box-content-item-content">
+                        <div class="message-box-content-item-content-message">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <span>12:00am</span>
+                        </div>
+                    </div>
+                    <div class="message-box-content-item-avatar">
+                        <img src="https://picsum.photos/id/20/100/100" alt="">
+                    </div>
+                </div>
+                  <!-- Left Message -->
+                  <div class="message-box-content-item left">
+                    <div class="message-box-content-item-avatar">
+                        <img src="https://picsum.photos/id/1/100/100" alt="">
+                    </div>
+                    <div class="message-box-content-item-content">
+                        <div class="message-box-content-item-content-message">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <span>12:00am</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Right Message -->
+                 <div class="message-box-content-item right">
+                    <div class="message-box-content-item-content">
+                        <div class="message-box-content-item-content-message">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            <span>12:00am</span>
+                        </div>
+                        </div>
+                        <div class="message-box-content-item-avatar">
+                            <img src="https://picsum.photos/id/20/100/100" alt="">
+                        </div>
+                 </div>
+                       <!-- Left Message -->
+                       <div class="message-box-content-item left">
+                        <div class="message-box-content-item-avatar">
+                            <img src="https://picsum.photos/id/1/100/100" alt="">
+                        </div>
+                        <div class="message-box-content-item-content">
+                            <div class="message-box-content-item-content-message">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                <span>12:00am</span>
+                            </div>
+                        </div>
+                    </div>
+                
+            </div>
+            
+            <div class="message-box-footer">
+                <div class="message-box-footer-center">
+                    <input type="text" placeholder="Type your message here">
+                </div>
+                <div class="message-box-footer-left">
+                    <i class="fa-solid fa-plus"></i>
+                    <i class="fa-solid fa-microphone"></i>
+                    <i class="fa-solid fa-face-smile">
+                        <emoji-picker id="emoji-picker" style="display: none;" onclick="displayEmoji()"></emoji-picker>
+                    </i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/emoji-picker-element@^1/index.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
