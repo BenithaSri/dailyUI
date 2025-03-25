@@ -1,0 +1,133 @@
+/* Default Styles */
+body {
+    background: linear-gradient(to right, #003268, #E3132C);
+    font-family: 'Roboto Mono', monospace;
+}
+
+.container {
+    width: 800px;
+    height: 300px;
+    border-radius: 15px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    position: relative;
+    left: 10%;
+    background-color: transparent;
+    margin-top: 100px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.boarding-pass {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    place-content: center;
+    margin-bottom: 2px;
+    border-radius: 10px;
+    border-right: rgb(111, 110, 110) 5px dashed;
+    background-color: white;
+}
+
+/* Boarding Pass */
+#destin {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    font-size: 15px;
+    margin-right: 30px;
+}
+
+#destin h1 {
+    font-family: inherit;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+#destin img {
+    margin-top: 20px;
+    width: 60px;
+    height: 40px;
+}
+
+.item {
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 30px;
+}
+
+.item span {
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: 300;
+    color: rgb(111, 110, 110);
+}
+
+.ticket {
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-gap: 5px;
+    place-items: center;
+    position: relative;
+    padding: 10px;
+    height: auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.ticket p {
+    font-size: 20px;
+    font-weight: 300;
+    font-family: inherit;
+    color: rgb(111, 110, 110);
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.ticket img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.ticket-image img {
+    width: 230px;
+    height: 40px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+    .container {
+       width: 90%;
+        left: 5%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        margin-top: 50px;
+    }
+    .boarding-pass {
+        border-right: none;
+        border-bottom: rgb(111, 110, 110) 5px dashed;
+    }
+
+}
+@media screen and (max-width: 480px) {
+    .container {
+        width: 90%;
+        left: 5%;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        margin-top: 50px;
+    }
+    .boarding-pass {
+        border-right: none;
+        border-bottom: rgb(111, 110, 110) 5px dashed;
+    }
+}
+
+
